@@ -1,13 +1,22 @@
+body, header, #logo {
+  margin: 0;
+}
+
 body {
   background-color: rgb(245, 245, 245);
 }
 
-section {
+header {
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgb(220, 220, 220);
+}
+
+#dogs-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-div {
+.dog-card {
   margin: 1rem;
   padding: 1rem;
   box-shadow: 2px 2px 5px rgb(211, 211, 211);

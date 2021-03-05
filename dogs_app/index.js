@@ -1,7 +1,7 @@
 console.log("JavaScript loaded");
 
-baseURL = "http://localhost:3000";
-dogsURL = `${baseURL}/dogs`;
+const baseURL = "http://localhost:3000";
+const dogsURL = `${baseURL}/dogs`;
 
 const dogsSection = document.querySelector("section");
 
@@ -15,6 +15,7 @@ function displayDogs(dogs) {
 
 function showDog(dog) {
   const dogCard = document.createElement("div");
+  dogCard.classList.add('dog-card');
   
   const name = document.createElement("h2");
   name.textContent = dog.name; 
